@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <!-- head -->
+
+    <header>
+      <a href="./index.html" class="title-logo">გიგას გალერია</a>
+      <nav class="navigation">
+        <ul class="menu">
+          <div class="close-btn"></div>
+          <li class="menu-item">
+            <a href="./index.html">მთავარი გვერდი</a>
+          </li>
+          <li class="menu-item">
+            <a class="sub-btn">გალერია <i class="fas fa-angle-down"></i></a>
+            <ul class="sub-menu">
+              <li class="sub-item">
+                <a href="./gallery2.html">ქორწილი</a>
+              </li>
+              <li class="sub-item">
+                <a href="./gallery3.html">ინდივიდუალური</a>
+              </li>
+              <li class="sub-item">
+                <a href="./gallery4.html">ბანკეტი</a>
+              </li>
+              <li class="sub-item">
+                <a href="./gallery5.html">ნათლობა</a>
+              </li>
+              <li class="sub-item">
+                <a href="./gallery6.html">ნატურმორტი</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="./contact.html">კონტაქტი</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-btn"></div>
+    </header>
+
+    <!-- gallery section -->
+
+    <section>
+      <div class="container">
+        <h1 class="gallery-title">ნატურმორტი</h1>
+        <div class="gallery">
+          <div class="gallery-img">
+              <img src="./images/foodphoto1/foodphoto (1).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (2).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (3).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (4).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (5).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (6).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (7).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (8).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (9).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (10).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (11).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (12).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (13).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (14).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (15).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (16).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (17).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (18).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (19).jpg" alt="" />
+              <img src="./images/foodphoto1/foodphoto (20).jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end gallery section -->
+
+    <!-- footer -->
+
+    <footer>
+      <div class="footer-row">
+        <div class="footer-col">
+          <div class="footer-socials">
+            <h1>სოციალური ქსელები</h1>
+            <a href="">
+              <div>
+                <img src="./icons/facebook.png" alt="" />
+              </div>
+              <h2>Facebook</h2>
+            </a>
+            <a href="">
+              <div>
+                <img src="./icons/twitter.png" alt="" />
+              </div>
+              <h2>twitter</h2>
+            </a>
+            <a href="">
+              <div>
+                <img src="./icons/instagram (1).png" alt="" />
+              </div>
+              <h2>Instagram</h2>
+            </a>
+            <a href="">
+              <div>
+                <img
+                  src="./icons/pinterest-circular-logo-symbol.png"
+                  alt=""
+                />
+              </div>
+              <h2>Pinterest</h2>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h1>ლინკები</h1>
+          <a href="#header"><h2>მთავარი გვერდი</h2></a>
+          <a href="./gallery.html"><h2>გალერია</h2></a>
+          <a href="./contact.html"><h2>კონტაქტი</h2></a>
+        </div>
+
+        <div class="footer-col">
+          <h1>საკონტაქტო ინფორმაცია</h1>
+          <h2>ტელ. ნომერი:&nbsp;<a href="">595 10 23 35</a></h2>
+          <h2>
+            Gmail:&nbsp;
+            <a href="mailto:vigaca@gmail.com">vigaca@gmail.com</a>
+          </h2>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end footer -->
+
+    <!-- script -->
+
+    <script>
+      $(document).ready(function () {
+        /* toggle sub-menus */
+        $(".sub-btn").click(function () {
+          $(this).next(".sub-menu").slideToggle();
+        });
+      });
+
+      /* javascript for the navigation menu */
+
+      var menu = document.querySelector(".menu");
+      var menuBtn = document.querySelector(".menu-btn");
+      var closeBtn = document.querySelector(".close-btn");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.add("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menu.classList.remove("active");
+      });
+    </script>
+  </body>
+</html>
